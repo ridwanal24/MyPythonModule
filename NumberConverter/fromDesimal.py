@@ -34,3 +34,13 @@ class DecimalHexConverter:
             hexnya += str(item)
 
         return hexnya
+
+    def toDecimal(self, value):
+        value = str(value)
+        arr = []
+        if len(value) >6:
+            return "Maksimal 6 digit gan"
+        else:
+            for i in value:
+                arr.append(i)
+                if 'A' in i:
